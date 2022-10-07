@@ -1,0 +1,189 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; 
+    /* 1rem = 10px */
+}
+.main_menu{
+    background-color: black;
+}
+.navbar{
+    color: #fff;
+    background-color: black;
+    padding: 2rem 0;
+}
+.navbar a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 12px;
+    transition: 0.4s ease-in-out;
+}
+.navbar a:hover{
+    color: rgb(235, 237, 239);
+    font-size: 2.1rem;
+    transition: 0.4s ease-in-out;
+}
+.navbar-toggler-icon{
+   background-color: white;
+   font-size: 2rem;
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rotate 2s linear infinite;
+    color: aliceblue;
+}
+@keyframes rotate{
+ 0%{
+    transform: rotate(0deg);
+ }
+ 100%{
+    transform: rotate(360deg);
+ }
+}
+
+/* Main header */
+.main_header_left, .main_header_right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+img{
+    height: 35rem;
+    width: 50rem;
+}
+
+.main_header_left p{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.main_header_left h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 3.5rem;
+}
+.main_header_left button{
+    padding: 2rem;
+    font-size: 2rem;
+    border-radius:  1.5rem;
+    border: none;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-in-out;
+    font-weight: 800;
+}
+.main_header_left button:hover{
+    font-size: 1.8rem;
+    transition: 0.4s ease-in-out;
+}
+.main_header_left span{
+    color: rgb(124, 118, 118);
+}
+footer{
+  margin: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #fff;
+  height: 6rem;
+    font-size: 1.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+/* Error page */
+.centerr{
+   margin-left: 25rem;
+    
+}
+/* Weather page styling */
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+    margin: auto;
+}
+#cityname{
+    width: 52rem;
+    height: 5.8rem;
+    border-radius: 2rem;
+    position: relative;
+    background-color: black;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1.2rem;
+    letter-spacing: 0.2rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+#submitBtn{
+    height: 5.8rem;
+    width: 8rem;
+    border-radius: 2rem;
+    position: absolute;
+    right: 29%;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+#submitBtn:hover{
+    color: black;
+    background-color: rgb(137, 235, 235);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+::placeholder{
+    font-size: 2rem;
+    padding: 1rem;
+    color: rgb(128, 128, 121);
+}
+
+.temperatureinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 50rem;
+    height: 30rem;
+    color: #fff;
+    margin: auto;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0.6rem 0.5rem 0.8rem rgba(0, 0, 0, 0.5);
+}
+.top_layer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    font-size: 2.5rem;
+    position: relative;
+    top: -10%;
+}
+
+#city_name{
+    font-size: 2.5rem;
+    color: rgb(119, 115, 115);
+    text-align: center;
+}
+.middle_layer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    padding-top: 3rem;
+    gap: 5rem;
+}
+.data_hide{
+    visibility: hidden;
+}
